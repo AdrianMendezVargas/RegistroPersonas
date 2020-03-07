@@ -10,7 +10,7 @@ namespace RegistroPersona.DAL {
         public DbSet<Persona> Personas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlite("Data Source = RegistroPersonas.db");
+            optionsBuilder.UseSqlite("Data Source = Registro.db");
         }
     }
 }

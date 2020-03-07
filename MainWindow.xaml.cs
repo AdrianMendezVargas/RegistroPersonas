@@ -1,4 +1,5 @@
 ﻿using RegistroPersona.UI;
+using RegistroPersona.UI.Consulta;
 using RegistroPersona.UI.Registro;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,9 @@ namespace RegistroPersona {
         }
 
         private void ConsultaPersonaMenuItem_Click(object sender , RoutedEventArgs e) {
-
+            ConsultaDePersonas consultaDePersonas = new ConsultaDePersonas();
+            consultaDePersonas.Owner = this;
+            consultaDePersonas.ShowDialog();
         }
 
         private void RegitroPersonaMenuItem_Click(object sender , RoutedEventArgs e) {
