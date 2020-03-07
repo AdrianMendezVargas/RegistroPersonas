@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroPersona"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="293" Width="398">
     <Grid>
+
+        <Menu>
+            <MenuItem Header="_Registro">
+                <MenuItem x:Name="RegitroPersonaMenuItem" Header="_Persona" Click="RegitroPersonaMenuItem_Click"/>
+
+            </MenuItem>
+            <MenuItem Header="_Consulta">
+                <MenuItem x:Name="ConsultaPersonaMenuItem" Header="_Persona" Click="ConsultaPersonaMenuItem_Click"/>
+
+            </MenuItem>
+        </Menu>
 
     </Grid>
 </Window>

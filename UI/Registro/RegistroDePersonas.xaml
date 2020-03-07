@@ -1,12 +1,12 @@
-﻿<Window x:Class="RegistroPersona.UI.RegistroPersona"
+﻿<Window x:Class="RegistroPersona.UI.Registro.RegistroDePersonas"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RegistroPersona.UI"
+        xmlns:local="clr-namespace:RegistroPersona.UI.Registro"
         xmlns:reglasdevalidacion="clr-namespace:RegistroPersona.UI.ReglasDeValidacion"
         mc:Ignorable="d"
-        Title="RegistroPersona" Height="233" Width="400">
+        Title="RegistroDePersonas" Height="249" Width="400">
     <Grid x:Name="MainGrid" >
 
         <Label Content="Persona Id" HorizontalAlignment="Left" Margin="30,79,0,0" VerticalAlignment="Top"/>
@@ -37,7 +37,7 @@
         <Button x:Name="BuscarButton" Click="BuscarButton_Click" Content="Buscar" HorizontalAlignment="Left" Margin="311,82,0,0" VerticalAlignment="Top"/>
 
 
-        <Grid HorizontalAlignment="Center" Width="248" Margin="0,0,0,23" Height="30" VerticalAlignment="Bottom">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="248" Margin="0,0,0,23">
             <Button x:Name="NuevoButton" Click="NuevoButton_Click" Content="Nuevo" HorizontalAlignment="Left" Margin="0,0,0,0" Height="30" VerticalAlignment="Bottom"/>
             <Button x:Name="GuardarButton" Click="GuardarButton_Click" Content="Guardar" HorizontalAlignment="Left" Margin="99,0,0,0" Height="30" VerticalAlignment="Bottom"/>
             <Button x:Name="EliminarButton" Click="EliminarButton_Click" Content="Eliminar" HorizontalAlignment="Left" Margin="201,0,0,0" Height="30" VerticalAlignment="Bottom"/>

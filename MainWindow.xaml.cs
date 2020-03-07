@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RegistroPersona.UI;
+using RegistroPersona.UI.Registro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,16 @@ namespace RegistroPersona {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+        }
+
+        private void ConsultaPersonaMenuItem_Click(object sender , RoutedEventArgs e) {
+
+        }
+
+        private void RegitroPersonaMenuItem_Click(object sender , RoutedEventArgs e) {
+            RegistroDePersonas registroDePersonas = new RegistroDePersonas();
+            registroDePersonas.Owner = this;
+            registroDePersonas.ShowDialog();
         }
     }
 }
